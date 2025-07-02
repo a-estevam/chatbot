@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("./img/background.png");
+}
+
+.span{
+    font-weight: 700;
+}
+
+input{
+    margin-left: 5px;
+    height: 30px;
+    border: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+.sec01,
+.sec02 {
+  margin-top: 50px;
+}
+
+.sec02,
+.sec03 {
+  display: none;
+}
+
+.quest01,
+.quest02 {
+  margin-top: 50px;
+  display: flex;
+
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.boxbr {
+  display: flex;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.boxtxtBR {
+  width: 70%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 0 20px 20px;
+}
+
+.boxvd {
+  display: flex;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.boxtxtVD {
+  background-color: #25d366;
+  padding: 25px;
+  border-radius: 20px 0px 20px 20px;
+}
+
+.resp01 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ok,
+.next {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+
+/* Animações */
+
+
+.quest01 {
+  opacity: 0;
+  animation: aparecer 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.quest02 {
+  opacity: 0;
+  animation: aparecer 0.5s ease forwards;
+  animation-delay: 2s;
+}
+
+.resp01 {
+  opacity: 0;
+  animation: aparecer 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
