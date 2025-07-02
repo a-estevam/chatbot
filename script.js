@@ -1,31 +1,25 @@
+let sectionInicio = document.querySelector(".section-inicio");
+let sectionNome = document.querySelector(".section-nome");
+let sectionFinal = document.querySelector(".section-final");
 
+let botaoAceitar = document.querySelector(".btn-aceitar");
+let botaoContinuar = document.querySelector(".btn-continuar");
+let campoNome = document.querySelector(".campo-nome");
 
-let sec01 = document.querySelector(".sec01")
-let sec02 = document.querySelector(".sec02")
-let sec03 = document.querySelector(".sec03")
-let btnOk = document.querySelector(".ok")
-let btnnext =document.querySelector(".next")
-let nome = document.querySelector(".name")
-let avatarNAme = document.querySelector(".avatar_name").innerText = "OLÍVIA"
+document.querySelector(".avatar-nome").innerText = "ANTONIO";
 
-
-
-btnOk.addEventListener("click", function(){
-    sec02.style.display = "block"
-
-    sec02.scrollIntoView({behavior: "smooth"})
-})
-
-
-btnnext.addEventListener("click", () => {
-  let nome = document.querySelector(".name").value;
-    if(nome ==""){
-        return;
-    }
-
-  sec03.style.display = "block"
-  document.getElementById("nomeDigitado").innerText = nome;
-
-  sec03.scrollIntoView({behavior: "smooth"})
+botaoAceitar.addEventListener("click", function () {
+  sectionNome.style.display = "block";
+  sectionNome.scrollIntoView({ behavior: "smooth" });
 });
 
+botaoContinuar.addEventListener("click", () => {
+  let nomeDigitado = campoNome.value;
+  if (nomeDigitado == "") {
+    return;
+  }
+
+  sectionFinal.style.display = "block";
+  document.getElementById("nome-usuario").innerText = nomeDigitado;
+  sectionFinal.scrollIntoView({ behavior: "smooth" });
+});

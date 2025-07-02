@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./img/avatar.png">
-    <title>meu_chatBot</title>
+    <title>ChatBot</title>
 </head>
-
 <body>
-    <header class="container">
-        <h1>meu chat</h1>
+    <header class="layout-container">
+        <h1>Chat</h1>
     </header>
 
-    <section class="sec01 container">
-        <div class="quest01">
-            <img src="./img/avatar.png" alt="" srcset="">
-            <div class="boxbr">
-                <img src="./img/question_br.png" alt="" srcset="">
-                <div class="boxtxtBR">
-                    <h3 class="avatar_name">nome do avatar</h3>
+    <section class="section-inicio layout-container">
+        <div class="mensagem-avatar">
+            <img src="./img/avatar.png" alt="">
+            <div class="balcao-avatar">
+                <img src="./img/question_br.png" alt="">
+                <div class="mensagem-avatar-texto">
+                    <h3 class="avatar-nome">Olívia</h3>
                     <p>Olá, eu sou a sua facilitadora na Jornada de Aprendizagem OTIS.
                         <br>Estamos muito felizes e
                         animados para dar início ao programa NOSSO JEITO OTIS – Elevando a Experiência do cliente.</p>
@@ -28,85 +26,71 @@
             </div>
         </div>
 
-
-        <div class="quest02">
-            <img src="./img/avatar_blank.png" alt="" srcset="">
-            <div class="boxbr">
-                <img src="./img/question_blank.png" alt="" srcset="">
-                <div class="boxtxtBR">
+        <div class="mensagem-avatar-secundario">
+            <img src="./img/avatar_blank.png" alt="">
+            <div class="balcao-avatar">
+                <img src="./img/question_blank.png" alt="">
+                <div class="mensagem-avatar-texto">
                     <p>Tem uma pessoa muito especial que também quer falar com você sobre isso!
                         <br>Você pode receber uma ligação?</p>
                 </div>
             </div>
         </div>
 
-
-
-
-        <div class="resp01">
-            <div class="boxvd">
-                <div class="boxtxtVD">
-                    <h3>VOCÊ</h3>
-                    <div class="flex">
+        <div class="resposta-usuario">
+            <div class="balcao-usuario">
+                <div class="mensagem-usuario-texto">
+                    <h3>Você</h3>
+                    <div class="linha-flex">
                         <p>CLIQUE AQUI PARA ACEITAR</p>
-                        <img class="ok" src="./img/ok.png" alt="" srcset="">
+                        <img class="btn-aceitar" src="./img/ok.png" alt="">
                     </div>
                 </div>
-                <img src="./img/question_vd.png" alt="" srcset="">
+                <img src="./img/question_vd.png" alt="">
             </div>
         </div>
     </section>
 
-
-    <section class="sec02 container">
-
-        <div class="quest01">
-            <img src="./img/avatar.png" alt="" srcset="">
-            <div class="boxbr">
-                <img src="./img/question_br.png" alt="" srcset="">
-                <div class="boxtxtBR">
-                    <h3>OLÍVIA</h3>
+    <section class="section-nome layout-container">
+        <div class="mensagem-avatar">
+            <img src="./img/avatar.png" alt="">
+            <div class="balcao-avatar">
+                <img src="./img/question_br.png" alt="">
+                <div class="mensagem-avatar-texto">
+                    <h3>Olívia</h3>
                     <p>Mas antes, me ajuda com uma questão?<br>Como você gostaria de ser chamado(a)?<br>Pode ser nome, apelido
                         – como você quiser...</p>
                 </div>
             </div>
         </div>
 
-
-            <div class="resp01">
-            <div class="boxvd">
-                <div class="boxtxtVD">
-                    <h3>VOCÊ</h3>
-                    <div class="flex">
+        <div class="resposta-usuario">
+            <div class="balcao-usuario">
+                <div class="mensagem-usuario-texto">
+                    <h3>Você</h3>
+                    <div class="linha-flex">
                         <p>Escreve seu nome:</p>
-                        <input class="name" type="text">
-                        <img class="next" src="./img/next.png" alt="" srcset="">
+                        <input class="campo-nome" type="text">
+                        <img class="btn-continuar" src="./img/next.png" alt="">
                     </div>
                 </div>
-                <img src="./img/question_vd.png" alt="" srcset="">
+                <img src="./img/question_vd.png" alt="">
             </div>
         </div>
-
     </section>
 
-
-    <section class="sec03 container">
-
-            <div class="quest01">
-            <img src="./img/avatar.png" alt="" srcset="">
-            <div class="boxbr">
-                <img src="./img/question_br.png" alt="" srcset="">
-                <div class="boxtxtBR">
-                    <h3>OLÍVIA</h3>
-                    <p><span id="nomeDigitado"></span>, agora sim, vou colocar os dois na ligação.</p>
+    <section class="section-final layout-container">
+        <div class="mensagem-avatar">
+            <img src="./img/avatar.png" alt="">
+            <div class="balcao-avatar">
+                <img src="./img/question_br.png" alt="">
+                <div class="mensagem-avatar-texto">
+                    <h3>Olívia</h3>
+                    <p><span id="nome-usuario"></span>, agora sim, vou colocar os dois na ligação.</p>
                 </div>
             </div>
         </div>
-
     </section>
-
-
 </body>
 <script src="./script.js"></script>
-
 </html>
