@@ -6,11 +6,14 @@ let botaoAceitar = document.querySelector(".btn-aceitar");
 let botaoContinuar = document.querySelector(".btn-continuar");
 let campoNome = document.querySelector(".campo-nome");
 
-document.querySelector(".avatar-nome").innerText = "ANTONIO";
+let avatarNome = document.querySelectorAll(".avatar-nome").forEach(el => {
+  el.innerText = "ANT0NIO";
+});
 
 botaoAceitar.addEventListener("click", function () {
   sectionNome.style.display = "block";
   sectionNome.scrollIntoView({ behavior: "smooth" });
+  
 });
 
 botaoContinuar.addEventListener("click", () => {
