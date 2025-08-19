@@ -1,6 +1,6 @@
 let userName = "ANTONIO";
-const avatarName = "PAPAGAIO DA SEGURANÇA";
-const directorName = "Florivaldo Junior";
+const avatarName = "Nome do Avatar";
+const directorName = "Antonio Estevam";
 
 
 const sec1 = document.querySelector(".sec01");
@@ -107,7 +107,7 @@ function textSec6() {
   sec6.innerHTML = `
     <div class="call-screen">
       <div class="profile">
-        <img src="./img/Florivaldo Junior.jpg" alt="Florivaldo Junior">
+        <img src="./img/pessoaLigacao.jpg" alt=${directorName}>
         <audio id="ringtone" src="./audio/mobile-ringtone.mp3" preload="auto"></audio>
         <audio id="audio1" src="./audio/audio1.mp3" preload="auto"></audio>
       </div>
