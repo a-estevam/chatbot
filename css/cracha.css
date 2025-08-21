@@ -1,0 +1,32 @@
+body {
+  background-color: #bcbcbc;
+  margin: 0;
+  height: 100vh;
+}
+
+:root {
+  --crop: 1px solid #e6007e;
+  --background: #ffffff;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.front_badge,
+.back_badge {
+  margin: 20px;
+}
+
+
+.bleed_area {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100%;            
+  width: 100%; 
+}
