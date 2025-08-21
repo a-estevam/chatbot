@@ -2,20 +2,27 @@ body {
   background-color: #bcbcbc;
   margin: 0;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
-:root {
-  --crop: 1px solid #e6007e;
-  --background: #ffffff;
-
-}
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    background-color: rgb(191, 68, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
+
+aside{
+    content: "";
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+}
+
+
 
 .front_badge,
 .back_badge {
