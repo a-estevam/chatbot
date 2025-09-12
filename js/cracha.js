@@ -1,27 +1,20 @@
-const badge = document.querySelector(".final_cut")
-const bleed = document.querySelector(".bleed_area")
-const measure = document.querySelector(".measure")
+const containers = document.querySelectorAll(".container");
 
-const bgcolor = "green"
-const radius = 8
+const crop = 10;
+const width = 54;
+const height = 85;
+const totalWidth = crop + width + crop;
+const totalHeight = crop + height + crop;
 
+containers.forEach(container => {
+  container.style.width = totalWidth + "mm";
+  container.style.height = totalHeight + "mm";
+  container.style.gridTemplateColumns = `${crop}mm ${width}mm ${crop}mm`;
+  container.style.gridTemplateRows = `${crop}mm ${height}mm ${crop}mm`;
 
-//crachá tamanho final
-const badgeWidth = 54
-const badgeheight = 85.6
-
-badge.style.width = badgeWidth + "mm"
-badge.style.height = badgeheight + "mm"
-badge.style.border = "2px solid black";
-badge.style.borderRadius = radius + "px"
-
-
-//sangria do cracha
-const bleedWidth = 60
-const bleedheight = 90.6
-
-bleed.style.width = bleedWidth + "mm"
-bleed.style.height = bleedheight + "mm"
-bleed.style.backgroundColor = bgcolor
-bleed.style.border = "2px solid green";
-
+  const corners = container.querySelectorAll(".corner");
+  corners.forEach(corner => {
+    corner.style.width = crop + "mm";
+    corner.style.height = crop + "mm";
+  });
+});
