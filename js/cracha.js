@@ -1,6 +1,6 @@
 const containers = document.querySelectorAll(".container");
 
-const crop = 10;
+const crop = 5;
 const width = 54;
 const height = 85;
 const totalWidth = crop + width + crop;

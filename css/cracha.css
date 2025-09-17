@@ -61,6 +61,19 @@ body {
 
 .blue-area {
   background-color: #0078d7;
+  
+
+  display: flex;
+  justify-content: center;
+}
+
+.pitoco{
+  width: 15mm;
+  height: 3mm;
+  border: 1px solid red;
+  border-radius: 80px;
+  margin-top: 10px;
+
 }
 
 @media print {
@@ -88,4 +101,14 @@ body {
   .container {
     transform: none;
   }
+}
+
+
+@media screen and (max-width: 600px) {
+  .content,
+  .view-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
