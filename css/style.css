@@ -1,13 +1,19 @@
-:root {
-  --bubble-in: #d8e9cc; /* recebido (cinza escuro) */
-  --bubble-out: #b3b9af; /* enviado (verde) */
-  --text-primary: #262626; /* texto principal */
-  --text-secondary: #8696a0; /* texto fraco */
-  --amarelo : #d6cf05;
-  --radius: 14px;
-  --radius-bubble: 16px;
-  --max-width: 700px;
+@import url(./reset.css);
+@import url(./root.css);
+
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('../img/bg.jpg'); 
+  background-repeat: repeat; 
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.5); /* branco com 50% */
+  background-blend-mode: lighten;
+  
 }
+
 
 
 header{

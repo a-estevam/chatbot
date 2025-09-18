@@ -1,0 +1,17 @@
+:root {
+  --bubble-in: #d8e9cc; /* recebido (cinza escuro) */
+  --bubble-out: #b3b9af; /* enviado (verde) */
+  --text-primary: #262626; /* texto principal */
+  --text-secondary: #8696a0; /* texto fraco */
+  --amarelo : #d6cf05;
+  --radius: 14px;
+  --radius-bubble: 16px;
+  --max-width: 700px;
+
+  --marca-de-corte: #ff00f9 1px solid;
+  --off-white: #f1f4f8;
+  --white: #ffffff;
+  --gray:#dcdcdc;
+
+
+}

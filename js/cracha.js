@@ -1,10 +1,17 @@
 const containers = document.querySelectorAll(".container");
+const roundConers = document.querySelectorAll(".blue-area")
+let colaborador = document.querySelector(".funcionario")
+const nameUser = document.querySelector("#name")
 
 const crop = 5;
-const width = 54;
+const width = 55;
 const height = 85;
 const totalWidth = crop + width + crop;
 const totalHeight = crop + height + crop;
+const bordas = 2
+
+colaborador.textContent = nameUser.value
+
 
 containers.forEach(container => {
   container.style.width = totalWidth + "mm";
@@ -18,3 +25,7 @@ containers.forEach(container => {
     corner.style.height = crop + "mm";
   });
 });
+
+roundConers.forEach(roundConer =>{
+  roundConer.style.borderRadius = `${bordas}mm`
+})
