@@ -114,9 +114,13 @@ body {
 
 }
 
-.avatar{
-  width: 50%;
+.avatar {
+  width: 80px;
+  height: 80px;
   margin-top: 8mm;
+  object-fit: cover;   
+  object-position: center; 
+  border-radius: 50%;  
 }
 
 .data{
